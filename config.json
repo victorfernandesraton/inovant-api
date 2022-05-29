@@ -1,0 +1,5 @@
+{
+  "resetPasswordHtml": "./templates/reset-password.html",
+  "confirmationAccount": "./templates/confirmation-account.html",
+  "imagesTemplate": "http://inovant.hmlo.ga:8105/templates/images"
+}

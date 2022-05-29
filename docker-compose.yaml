@@ -1,0 +1,63 @@
+version: '3.7'
+services:
+  api:
+    container_name: api-inovant-dev
+    build: 
+      dockerfile: Dockerfile
+      context: .
+      target: dev
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db          
+    networks:
+      - inovant
+    environment:
+      - ENVIROMENT=development
+    env_file:
+      - .env
+
+  api-prod:
+    container_name: api-inovant-prod
+    build: .
+    restart: on-failure
+    volumes:
+      - api:/usr/src/app/
+    depends_on:
+      - db          
+    networks:
+      - inovant
+    env_file:
+      - .env
+    environment:
+      - ENVIROMENT=production
+
+  db:
+    restart: on-failure
+    image: postgres:10.20-alpine
+    container_name: pg-database
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks:
+      - inovant
+    env_file:
+      - .env
+
+ 
+
+volumes:
+  api:
+  db:                  
+
+# Networks to be created to facilitate communication between containers
+networks:
+  inovant:
+    driver: bridge

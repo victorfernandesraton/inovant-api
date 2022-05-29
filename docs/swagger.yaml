@@ -1,0 +1,3122 @@
+basePath: /
+definitions:
+  handler.actionVerificationDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.actionVerificationDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.actionVerificationDelResponse'
+        type: object
+    type: object
+  handler.actionVerificationGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.actionVerificationResponse'
+        type: object
+    type: object
+  handler.actionVerificationResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.actionsVerificationListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.actionsVerificationResponse'
+        type: object
+    type: object
+  handler.actionsVerificationResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.appointmentDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.appointmentDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.appointmentDelResponse'
+        type: object
+    type: object
+  handler.appointmentGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.appointmentResponse'
+        type: object
+    type: object
+  handler.appointmentResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.appointmentsListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.appointmentsResponse'
+        type: object
+    type: object
+  handler.appointmentsResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.authResetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.recoverResponse'
+        type: object
+    type: object
+  handler.authToken:
+    properties:
+      jwt:
+        description: JWT token
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXN0IjoidGVzdCJ9.MZZ7UbJRJH9hFRdBUQHpMjU4TK4XRrYP5UxcAkEHvxE.
+        type: string
+      user:
+        description: User auth data
+        type: string
+    type: object
+  handler.authTokenResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.loginResponse'
+        type: object
+    type: object
+  handler.avaliabilityListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.avaliabilityResponse'
+        type: object
+    type: object
+  handler.avaliabilityResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.calendarListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.calendarResponse'
+        type: object
+    type: object
+  handler.calendarResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.configDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.configDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.configDelResponse'
+        type: object
+    type: object
+  handler.configGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.configResponse'
+        type: object
+    type: object
+  handler.configResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.configsListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.configsResponse'
+        type: object
+    type: object
+  handler.configsResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.dataer:
+    type: object
+  handler.detailError:
+    properties:
+      domain:
+        type: string
+      extendedHelp:
+        type: string
+      location:
+        type: string
+      locationType:
+        type: string
+      message:
+        type: string
+      reason:
+        type: string
+      sendReport:
+        type: string
+    type: object
+  handler.doctorDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.doctorDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorDelResponse'
+        type: object
+    type: object
+  handler.doctorGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorResponse'
+        type: object
+    type: object
+  handler.doctorResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.doctorSpecialtyDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.doctorSpecialtyDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorSpecialtyDelResponse'
+        type: object
+    type: object
+  handler.doctorSpecialtyGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorSpecialtyResponse'
+        type: object
+    type: object
+  handler.doctorSpecialtyResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.doctorSpecialtysListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorSpecialtysResponse'
+        type: object
+    type: object
+  handler.doctorSpecialtysResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.doctorsListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.doctorsResponse'
+        type: object
+    type: object
+  handler.doctorsResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.errorResponse:
+    properties:
+      error:
+        $ref: '#/definitions/handler.generalError'
+        type: object
+    type: object
+  handler.fileResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.fileUpload'
+        type: object
+    type: object
+  handler.fileResult:
+    properties:
+      filename:
+        type: string
+    type: object
+  handler.fileUpload:
+    properties:
+      item:
+        $ref: '#/definitions/handler.fileResult'
+        type: object
+      kind:
+        description: The kind property serves as a guide to what type of information
+          this particular object stores
+        example: resource
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+    type: object
+  handler.generalError:
+    properties:
+      code:
+        type: integer
+      errors:
+        items:
+          $ref: '#/definitions/handler.detailError'
+        type: array
+      message:
+        type: string
+    type: object
+  handler.loginForm:
+    properties:
+      email:
+        description: Username string `json:"username" binding:"required" example:"username"`
+        example: user@example.com
+        type: string
+      password:
+        example: mypassword123
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  handler.loginOut:
+    properties:
+      item:
+        $ref: '#/definitions/handler.authToken'
+        type: object
+      kind:
+        example: authToken
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+    type: object
+  handler.loginResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.loginOut'
+        type: object
+    type: object
+  handler.passwordResetForm:
+    properties:
+      password:
+        example: password
+        type: string
+      verification:
+        example: $2y$12$F/npgjvknmHkNvDck15aeew...
+        type: string
+    required:
+    - password
+    - verification
+    type: object
+  handler.passwordVerifyForm:
+    properties:
+      email:
+        example: user@example.com
+        type: string
+    required:
+    - email
+    type: object
+  handler.patientDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.patientDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.patientDelResponse'
+        type: object
+    type: object
+  handler.patientGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.patientResponse'
+        type: object
+    type: object
+  handler.patientResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.patientsListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.patientsResponse'
+        type: object
+    type: object
+  handler.patientsResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.pushTokenBody:
+    properties:
+      token:
+        type: string
+    type: object
+  handler.pushTokenData:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+    type: object
+  handler.pushTokenResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.pushTokenData'
+        type: object
+    type: object
+  handler.recoverResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        example: Email
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+    type: object
+  handler.roomDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.roomDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.roomDelResponse'
+        type: object
+    type: object
+  handler.roomGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.roomResponse'
+        type: object
+    type: object
+  handler.roomResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.roomsListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.roomsResponse'
+        type: object
+    type: object
+  handler.roomsResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.scheduleDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.scheduleDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.scheduleDelResponse'
+        type: object
+    type: object
+  handler.scheduleGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.scheduleResponse'
+        type: object
+    type: object
+  handler.scheduleResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.schedulesListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.schedulesResponse'
+        type: object
+    type: object
+  handler.schedulesResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.specialtyDelResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.specialtyDeleteResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.specialtyDelResponse'
+        type: object
+    type: object
+  handler.specialtyGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.specialtyResponse'
+        type: object
+    type: object
+  handler.specialtyResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+    type: object
+  handler.specialtysListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.specialtysResponse'
+        type: object
+    type: object
+  handler.specialtysResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  handler.userGetResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.userResponse'
+        type: object
+    type: object
+  handler.userListResponse:
+    properties:
+      context:
+        description: Client sets this value and server echos data in the response
+        type: string
+      data:
+        $ref: '#/definitions/handler.usersResponse'
+        type: object
+    type: object
+  handler.userResponse:
+    properties:
+      item:
+        type: string
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+    type: object
+  handler.usersResponse:
+    properties:
+      currentItemCount:
+        description: The number of items in this result set
+        example: 1
+        type: integer
+      items:
+        type: string
+      itemsPerPage:
+        description: The number of items in the result
+        example: 10
+        type: integer
+      kind:
+        type: string
+      lang:
+        description: Indicates the language of the rest of the properties in this
+          object (BCP 47)
+        example: pt-br
+        type: string
+      pageIndex:
+        description: The index of the current page of items
+        example: 1
+        type: integer
+      startIndex:
+        description: The index of the first item in data.items
+        example: 1
+        type: integer
+      totalItems:
+        description: The total number of items available in this set
+        example: 100
+        type: integer
+      totalPages:
+        description: The total number of pages in the result set.
+        example: 10
+        type: integer
+    type: object
+  models.ActionVerification:
+    properties:
+      acveID:
+        type: string
+      createdAt:
+        type: string
+      deletedAt:
+        type: string
+      type:
+        type: string
+      userID:
+        type: string
+      verification:
+        type: string
+    type: object
+  models.Appointment:
+    properties:
+      appoID:
+        type: string
+      createdAt:
+        type: string
+      patiID:
+        type: string
+      scheID:
+        type: string
+      startAt:
+        type: string
+      status:
+        type: string
+      type:
+        type: string
+    type: object
+  models.Avaliability:
+    properties:
+      date:
+        type: string
+      doctID:
+        type: string
+      doctName:
+        type: string
+      slots:
+        type: string
+    type: object
+  models.Config:
+    properties:
+      key:
+        type: string
+      value:
+        type: string
+    type: object
+  models.Doctor:
+    properties:
+      createdAt:
+        type: string
+      doctID:
+        type: string
+      email:
+        type: string
+      inactiveAt:
+        type: string
+      info:
+        type: string
+      name:
+        type: string
+      roles:
+        $ref: '#/definitions/models.UserRole'
+        type: object
+      updateAt:
+        type: string
+      userID:
+        type: string
+    type: object
+  models.DoctorSpecialty:
+    properties:
+      createdAt:
+        type: string
+      doctID:
+        type: string
+      specID:
+        type: integer
+    type: object
+  models.Patient:
+    properties:
+      createdAt:
+        type: string
+      doctID:
+        type: string
+      email:
+        type: string
+      info:
+        type: string
+      name:
+        type: string
+      patiID:
+        type: string
+      updatedAt:
+        type: string
+    type: object
+  models.Room:
+    properties:
+      label:
+        type: string
+      roomID:
+        type: string
+    type: object
+  models.Schedule:
+    properties:
+      createdAt:
+        type: string
+      doctID:
+        type: string
+      endAt:
+        type: string
+      info:
+        type: string
+      plan:
+        type: string
+      roomID:
+        type: string
+      scheID:
+        type: string
+      startAt:
+        type: string
+    type: object
+  models.Specialty:
+    properties:
+      description:
+        type: string
+      name:
+        type: string
+      specID:
+        type: integer
+    type: object
+  models.User:
+    properties:
+      createdAt:
+        type: string
+      email:
+        type: string
+      inactiveAt:
+        type: string
+      roles:
+        $ref: '#/definitions/models.UserRole'
+        type: object
+      userID:
+        type: string
+    type: object
+  models.UserRole:
+    items: {}
+    type: array
+host: 192.168.1.69:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: API server for inovantapp.
+  license: {}
+  termsOfService: http://swagger.io/terms/
+  title: inovantapp API
+  version: "1.0"
+paths:
+  /api/actions-verification:
+    get:
+      consumes:
+      - application/json
+      description: Get ActionVerification list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter ActionVerifications by type [acveID]
+        in: query
+        name: acveID
+        type: string
+      - description: Filter ActionVerifications by type [userID]
+        in: query
+        name: userID
+        type: string
+      - description: Filter ActionVerifications by type [type]
+        in: query
+        name: type
+        type: string
+      - description: Filter ActionVerifications by type [verification]
+        in: query
+        name: verification
+        type: string
+      - description: Filter ActionVerifications by type [createdAt[gte]]
+        in: query
+        name: createdAt[gte]
+        type: string
+      - description: Filter ActionVerifications by type [createdAt[lte]]
+        in: query
+        name: createdAt[lte]
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.actionsVerificationListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: ActionVerification.List
+    post:
+      consumes:
+      - application/json
+      description: Create ActionVerification
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new ActionVerification
+        in: body
+        name: ActionVerification
+        required: true
+        schema:
+          $ref: '#/definitions/models.ActionVerification'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.actionVerificationGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: ActionVerification.Create
+  /api/actions-verification/{acveID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a ActionVerification
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter ActionVerifications by type [acveID]
+        in: query
+        name: acveID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.actionVerificationGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: ActionVerification.Get
+    put:
+      consumes:
+      - application/json
+      description: Update ActionVerification
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: ActionVerification ID
+        format: string
+        in: path
+        name: acveID
+        required: true
+        type: string
+      - description: ActionVerification Update Body
+        in: body
+        name: ActionVerification
+        required: true
+        schema:
+          $ref: '#/definitions/models.ActionVerification'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.actionVerificationGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: ActionVerification.Update
+  /api/appointments:
+    get:
+      consumes:
+      - application/json
+      description: Get Appointment list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Appointments by type [appoID]
+        in: query
+        name: appoID
+        type: string
+      - description: Filter Appointments by type [GstartAt]
+        in: query
+        name: GStartAt
+        type: string
+      - description: Filter Appointments by type [LstartAt]
+        in: query
+        name: LStartAt
+        type: string
+      - description: Filter Appointments by type [scheID]
+        in: query
+        name: scheID
+        type: string
+      - description: Filter Appointments by type [patiID]
+        in: query
+        name: patiID
+        type: string
+      - description: Filter Appointments by type [type]
+        in: query
+        name: type
+        type: string
+      - description: Filter Appointments by type [status]
+        in: query
+        name: status
+        type: string
+      - description: Filter Appointments by type [createdAt[gte]]
+        in: query
+        name: createdAt[gte]
+        type: string
+      - description: Filter Appointments by type [createdAt[lte]]
+        in: query
+        name: createdAt[lte]
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.appointmentsListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Appointment.List
+    post:
+      consumes:
+      - application/json
+      description: Create Appointment
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Appointment
+        in: body
+        name: Appointment
+        required: true
+        schema:
+          $ref: '#/definitions/models.Appointment'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.appointmentGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Appointment.Create
+  /api/appointments/{appoID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Appointment
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Appointments by type [appoID]
+        in: query
+        name: appoID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.appointmentGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Appointment.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Appointment
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Appointment ID
+        format: string
+        in: path
+        name: appoID
+        required: true
+        type: string
+      - description: Appointment Update Body
+        in: body
+        name: Appointment
+        required: true
+        schema:
+          $ref: '#/definitions/models.Appointment'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.appointmentGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Appointment.Update
+  /api/avaliability:
+    get:
+      consumes:
+      - application/json
+      description: Check Avaliability
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Check Avaliability
+        in: body
+        name: Avaliability
+        required: true
+        schema:
+          $ref: '#/definitions/models.Avaliability'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.avaliabilityListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Avaliability.Check
+  /api/calendar:
+    get:
+      consumes:
+      - application/json
+      description: Get Schedule Calendar
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.calendarListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Schedule.Calendar
+  /api/configs:
+    get:
+      consumes:
+      - application/json
+      description: Get Config list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Configs by type [key]
+        in: query
+        name: key
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.configsListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Config.List
+    post:
+      consumes:
+      - application/json
+      description: Create Config
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Config
+        in: body
+        name: Config
+        required: true
+        schema:
+          $ref: '#/definitions/models.Config'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.configGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Config.Create
+  /api/configs/{key}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Config
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Configs by type [key]
+        in: query
+        name: key
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.configGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Config.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Config
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Config key
+        format: string
+        in: path
+        name: key
+        required: true
+        type: string
+      - description: Config Update Body
+        in: body
+        name: Config
+        required: true
+        schema:
+          $ref: '#/definitions/models.Config'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.configGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Config.Update
+  /api/connect:
+    get:
+      consumes:
+      - application/json
+      description: Socket endpoint for chat
+      produces:
+      - application/json
+      summary: socket.chat
+  /api/doctors:
+    get:
+      consumes:
+      - application/json
+      description: Get Doctor list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Doctors by type [doctID]
+        in: query
+        name: doctID
+        type: string
+      - description: Filter Doctors by type [userID]
+        in: query
+        name: userID
+        type: string
+      - description: Filter Doctors by type [name]
+        in: query
+        name: name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorsListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Doctor.List
+    post:
+      consumes:
+      - application/json
+      description: Create Doctor
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Doctor
+        in: body
+        name: Doctor
+        required: true
+        schema:
+          $ref: '#/definitions/models.Doctor'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Doctor.Create
+  /api/doctors-specialty:
+    get:
+      consumes:
+      - application/json
+      description: Get DoctorSpecialty list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter DoctorSpecialty by type [doctID]
+        in: query
+        name: doctID
+        type: string
+      - description: Filter DoctorSpecialty by type [name]
+        in: query
+        name: name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorSpecialtysListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: DoctorSpecialty.List
+    post:
+      consumes:
+      - application/json
+      description: Create DoctorSpecialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new DoctorSpecialty
+        in: body
+        name: DoctorSpecialty
+        required: true
+        schema:
+          $ref: '#/definitions/models.DoctorSpecialty'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorSpecialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: DoctorSpecialty.Create
+  /api/doctors-specialty/{doctID}:
+    put:
+      consumes:
+      - application/json
+      description: Update DoctorSpecialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: DoctorSpecialty ID
+        format: string
+        in: path
+        name: doctID
+        required: true
+        type: string
+      - description: DoctorSpecialty Update Body
+        in: body
+        name: DoctorSpecialty
+        required: true
+        schema:
+          $ref: '#/definitions/models.DoctorSpecialty'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorSpecialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: DoctorSpecialty.Update
+  /api/doctors-specialty/{doctID}/{specID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a DoctorSpecialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter DoctorSpecialty by type [doctID]
+        in: query
+        name: doctID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorSpecialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: DoctorSpecialty.Get
+  /api/doctors/{doctID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Doctor
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Doctors by type [doctID]
+        in: query
+        name: doctID
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Doctor.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Doctor
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Doctor ID
+        format: string
+        in: path
+        name: doctID
+        required: true
+        type: string
+      - description: Doctor Update Body
+        in: body
+        name: Doctor
+        required: true
+        schema:
+          $ref: '#/definitions/models.Doctor'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.doctorGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Doctor.Update
+  /api/patients:
+    get:
+      consumes:
+      - application/json
+      description: Get Patient list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Patients by type [patiID]
+        in: query
+        name: patiID
+        type: string
+      - description: Filter Patients by type [doctID]
+        in: query
+        name: doctID
+        type: string
+      - description: Filter Patients by type [name]
+        in: query
+        name: name
+        type: string
+      - description: Filter Patients by type [email]
+        in: query
+        name: email
+        type: string
+      - description: Filter Patients by type [createdAt[gte]]
+        in: query
+        name: createdAt[gte]
+        type: string
+      - description: Filter Patients by type [createdAt[lte]]
+        in: query
+        name: createdAt[lte]
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.patientsListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Patient.List
+    post:
+      consumes:
+      - application/json
+      description: Create Patient
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Patient
+        in: body
+        name: Patient
+        required: true
+        schema:
+          $ref: '#/definitions/models.Patient'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.patientGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Patient.Create
+  /api/patients/{patiID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Patient
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Patients by type [patiID]
+        in: query
+        name: patiID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.patientGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Patient.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Patient
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Patient ID
+        format: string
+        in: path
+        name: patiID
+        required: true
+        type: string
+      - description: Patient Update Body
+        in: body
+        name: Patient
+        required: true
+        schema:
+          $ref: '#/definitions/models.Patient'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.patientGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Patient.Update
+  /api/rooms:
+    get:
+      consumes:
+      - application/json
+      description: Get Room list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Rooms by type [roomID]
+        in: query
+        name: roomID
+        type: string
+      - description: Filter Rooms by type [label]
+        in: query
+        name: label
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.roomsListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Room.List
+    post:
+      consumes:
+      - application/json
+      description: Create Room
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Room
+        in: body
+        name: Room
+        required: true
+        schema:
+          $ref: '#/definitions/models.Room'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.roomGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Room.Create
+  /api/rooms/{roomID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Room
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Rooms by type [roomID]
+        in: query
+        name: roomID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.roomGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Room.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Room
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Room ID
+        format: string
+        in: path
+        name: roomID
+        required: true
+        type: string
+      - description: Room Update Body
+        in: body
+        name: Room
+        required: true
+        schema:
+          $ref: '#/definitions/models.Room'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.roomGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Room.Update
+  /api/schedules:
+    get:
+      consumes:
+      - application/json
+      description: Get Schedule list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Schedules by type [scheID]
+        in: query
+        name: scheID
+        type: string
+      - description: Filter Schedules by type [doctID]
+        in: query
+        name: doctID
+        type: string
+      - description: Filter Schedules by type [roomID]
+        in: query
+        name: roomID
+        type: string
+      - description: Filter Schedules by type [startAt]
+        in: query
+        name: startAt
+        type: string
+      - description: Filter Schedules by type [endAt]
+        in: query
+        name: endAt
+        type: string
+      - description: Filter Schedules by type [plan]
+        in: query
+        name: plan
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.schedulesListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Schedule.List
+    post:
+      consumes:
+      - application/json
+      description: Create Schedule
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Schedule
+        in: body
+        name: Schedule
+        required: true
+        schema:
+          $ref: '#/definitions/models.Schedule'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.scheduleGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Schedule.Create
+  /api/schedules/{scheID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Schedule
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Schedules by type [scheID]
+        in: query
+        name: scheID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.scheduleGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Schedule.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Schedule
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Schedule ID
+        format: string
+        in: path
+        name: scheID
+        required: true
+        type: string
+      - description: Schedule Update Body
+        in: body
+        name: Schedule
+        required: true
+        schema:
+          $ref: '#/definitions/models.Schedule'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.scheduleGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Schedule.Update
+  /api/specialty:
+    get:
+      consumes:
+      - application/json
+      description: Get Specialty list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter Specialty by type [specID]
+        in: query
+        name: specID
+        type: string
+      - description: Filter Specialty by type [name]
+        in: query
+        name: name
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.specialtysListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Specialty.List
+    post:
+      consumes:
+      - application/json
+      description: Create Specialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Create new Specialty
+        in: body
+        name: Specialty
+        required: true
+        schema:
+          $ref: '#/definitions/models.Specialty'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.specialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Specialty.Create
+  /api/specialty/{specID}:
+    get:
+      consumes:
+      - application/json
+      description: Get a Specialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Filter specialty by type [specID]
+        in: query
+        name: specID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.specialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Specialty.Get
+    put:
+      consumes:
+      - application/json
+      description: Update Specialty
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Specialty ID
+        format: string
+        in: path
+        name: specID
+        required: true
+        type: string
+      - description: Specialty Update Body
+        in: body
+        name: Specialty
+        required: true
+        schema:
+          $ref: '#/definitions/models.Specialty'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.specialtyGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: Specialty.Update
+  /api/users:
+    get:
+      consumes:
+      - application/json
+      description: Get user list
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.userListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: users.List
+    post:
+      consumes:
+      - application/json
+      description: Create user
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: create new user
+        in: body
+        name: credentials
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.userGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: users.Create
+  /api/users/{userID}:
+    get:
+      consumes:
+      - application/json
+      description: Get user
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: get user
+        format: uuid
+        in: path
+        name: userID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.userGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: users.Get
+    put:
+      consumes:
+      - application/json
+      description: Update User
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: get user
+        format: uuid
+        in: path
+        name: userID
+        required: true
+        type: string
+      - description: Update instution data
+        in: body
+        name: credentials
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.userGetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: users.Update
+  /api/users/{userID}/push-token:
+    post:
+      consumes:
+      - application/json
+      description: SetPushToken adds/updates the Expo push token
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: push token
+        in: body
+        name: requestData
+        required: true
+        schema:
+          $ref: '#/definitions/handler.pushTokenBody'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.pushTokenResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: users.SetPushToken
+  /auth/password-recover:
+    post:
+      consumes:
+      - application/json
+      description: Start password recovery for account with given email
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Email to send reset password link
+        in: body
+        name: email
+        required: true
+        schema:
+          $ref: '#/definitions/handler.passwordVerifyForm'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.authTokenResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: auth.PasswordReset
+  /auth/password-reset/:
+    post:
+      consumes:
+      - application/json
+      description: Reset password for account with given email
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: reset id
+        in: path
+        name: resetID
+        required: true
+        type: string
+      - description: Information to reset form
+        in: body
+        name: email
+        required: true
+        schema:
+          $ref: '#/definitions/handler.passwordResetForm'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.authResetResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: auth.PasswordReset
+  /auth/signin:
+    post:
+      consumes:
+      - application/json
+      description: Login with email & password
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Email to login with
+        in: body
+        name: credentials
+        required: true
+        schema:
+          $ref: '#/definitions/handler.loginForm'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.loginOut'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: auth.login
+  /files/:
+    post:
+      consumes:
+      - application/json
+      description: Upload digital certificate file
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      - description: Update
+        in: body
+        name: formdata
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.fileResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: certificate.Upload
+  /files/{file}:
+    get:
+      description: Get file
+      parameters:
+      - description: Context to return
+        in: query
+        name: context
+        type: string
+      produces:
+      - application/octet-stream
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.fileResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.errorResponse'
+      summary: file.Get
+swagger: "2.0"
