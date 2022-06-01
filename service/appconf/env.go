@@ -1,7 +1,6 @@
 package appconf
 
 import (
-	"fmt"
 	"os"
 	"strconv"
 )
@@ -74,10 +73,6 @@ var Mail = struct {
 }{mailFrom, mailAlias}
 
 func init() {
-	fmt.Println(os.Getenv("ENVIROMENT"))
-	// if os.Getenv("ENVIROMENT") == "development" {
-	// 	godotenv.Load()
-	// }
 	userDB = os.Getenv("DB_USER")
 	passwordDB = os.Getenv("DB_PASSWORD")
 	nameDB = os.Getenv("DB_NAME")
