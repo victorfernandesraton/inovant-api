@@ -23,7 +23,7 @@ require (
 	github.com/sendgrid/sendgrid-go v3.11.0+incompatible
 	github.com/swaggo/swag v1.8.0
 	github.com/tidwall/buntdb v1.2.9
-	golang.org/x/crypto v0.0.0-20220214200702-86341886e292
+	golang.org/x/crypto v0.1.0
 	gopkg.in/guregu/null.v3 v3.5.0
 )
 
